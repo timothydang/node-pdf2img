@@ -1,6 +1,6 @@
 {
 	"name": "pdf2img-latest-code",
-	"version": "0.5.0",
+	"version": "0.6.0",
 	"description": "A nodejs module for converting pdf into image",
 	"author": "Fitra Aditya <fitra@g.pl>",
 	"license": "MIT",
@@ -25,8 +25,8 @@
 		"test": "./node_modules/.bin/mocha --reporter spec"
 	},
 	"keywords": [
-    "pdf to image",
-    "pdf to jpg",
-    "pdf to png"
-  ]
+		"pdf to image",
+		"pdf to jpg",
+		"pdf to png"
+	]
 }
