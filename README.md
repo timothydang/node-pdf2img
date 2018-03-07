@@ -4,11 +4,14 @@ This fork was made to change this library to be AWS Lambda friendly.
 
 A nodejs module for converting pdf into image file
 
+
 ## Dependencies
 - GraphicsMagick
 
 Note: Windows users, please be sure GraphicsMagick and Ghostscript are installed (see https://stackoverflow.com/questions/18733695/cimg-error-gm-exe-is-not-recognized-as-an-internal-or-external-command/45783910#45783910 for details) - then it works fine on Windows.
 
+
+Ghostscript executable must be in `lambda-ghostscript/bin/./gs`
 ## Installation
 ```
   $ [sudo] npm install pdf2img
