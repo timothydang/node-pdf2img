@@ -24,7 +24,12 @@
 	"main": "index.js",
 	"keywords": [
 		"pdf to image",
-		"pdf to jpg",
+		"pdf to image aws lambda",
+		"pdf to image lambda",
+		"pdf to jpg aws lambda",
+		"pdf to jpg lambda",
 		"pdf to png"
+		"pdf to png aws lambda"
+		"pdf to png lambda"
 	]
 }
