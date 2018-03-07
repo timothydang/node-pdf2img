@@ -28,8 +28,8 @@
 		"pdf to image lambda",
 		"pdf to jpg aws lambda",
 		"pdf to jpg lambda",
-		"pdf to png"
-		"pdf to png aws lambda"
+		"pdf to png",
+		"pdf to png aws lambda",
 		"pdf to png lambda"
 	]
 }
