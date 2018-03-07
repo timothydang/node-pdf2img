@@ -1,6 +1,6 @@
 # node-pdf2img
 
-This fork was only made to republish the latest code of this repository to npm.
+This fork was made to change this library to be AWS Lambda friendly.
 
 A nodejs module for converting pdf into image file
 
