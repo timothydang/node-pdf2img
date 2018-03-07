@@ -1,5 +1,5 @@
 {
-	"name": "pdf2img-aws-friendly",
+	"name": "pdf2img-lambda-friendly",
 	"version": "1.0.0",
 	"description": "A nodejs module for converting pdf into image",
 	"author": "Fitra Aditya <fitra@g.pl>",
