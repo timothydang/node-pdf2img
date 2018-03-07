@@ -1,21 +1,21 @@
-# node-pdf2img
+# pdf2img-aws-friendly
+
+This is a nodejs module for converting pdf into image files.
 
 This fork was made to change this library to be AWS Lambda friendly.
 
-A nodejs module for converting pdf into image file
+Original package can be found at https://github.com/fitraditya/node-pdf2img
 
+Currently (07-03-2018) AWS Lambda has a preinstalled ghostscript v8.70 (ancient!). In order to make pdf to img conversion work you need a newer ghostscript version.
 
-## Dependencies
-- GraphicsMagick
-
-Note: Windows users, please be sure GraphicsMagick and Ghostscript are installed (see https://stackoverflow.com/questions/18733695/cimg-error-gm-exe-is-not-recognized-as-an-internal-or-external-command/45783910#45783910 for details) - then it works fine on Windows.
-
-
-Ghostscript executable must be in `lambda-ghostscript/bin/./gs`
 ## Installation
-```
-  $ [sudo] npm install pdf2img
-```
+
+`npm i pdf2img-aws-friendly`
+
+Download the compiled version of Ghostscript from [lambda-ghostscript](https://github.com/sina-masnadi/lambda-ghostscript).
+
+Ghostscript executable must be accessible by following this path `lambda-ghostscript/bin/./gs`
+
 
 ## Usage
 
@@ -28,11 +28,9 @@ var input   = __dirname + '/test.pdf';
 
 pdf2img.setOptions({
   type: 'png',                                // png or jpg, default jpg
-  size: 1024,                                 // default 1024
   density: 600,                               // default 600
   outputdir: __dirname + path.sep + 'output', // output folder, default null (if null given, then it will create folder name same as file name)
   outputname: 'test',                         // output file name, dafault null (if null given, then it will create image name same as input name)
-  page: null                                  // convert selected page, default null (if null given, then it will convert all pages)
 });
 
 pdf2img.convert(input, function(err, info) {
@@ -60,10 +58,5 @@ It will return array of splitted and converted image files.
        path: '/output/test_3.jpg' } ] }
 ```
 
-## Maintainer
-[Fitra Aditya][0]
-
 ## License
 MIT
-
-[0]: https://github.com/fitraditya
