@@ -1,5 +1,7 @@
 # node-pdf2img
 
+This fork was only made to republish the latest code of this repository to npm.
+
 A nodejs module for converting pdf into image file
 
 ## Dependencies
@@ -40,7 +42,7 @@ It will return array of splitted and converted image files.
 
 ```javascript
 { result: 'success',
-  message: 
+  message:
    [ { page: 1,
        name: 'test_1.jpg',
        size: 17.275,
