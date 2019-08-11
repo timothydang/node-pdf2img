@@ -16,7 +16,6 @@ Download the compiled version of Ghostscript from [lambda-ghostscript](https://g
 
 Ghostscript executable must be accessible by following this path `lambda-ghostscript/bin/./gs`
 
-
 ## Usage
 
 ```javascript
@@ -31,6 +30,8 @@ pdf2img.setOptions({
   density: 600,                               // default 600
   outputdir: __dirname + path.sep + 'output', // output folder, default null (if null given, then it will create folder name same as file name)
   outputname: 'test',                         // output file name, dafault null (if null given, then it will create image name same as input name)
+  page: null,                                 // convert selected page, default null (if null given, then it will convert all pages)
+  quality: 100                                // jpg compression quality, default: 100
 });
 
 pdf2img.convert(input, function(err, info) {
@@ -59,4 +60,5 @@ It will return array of splitted and converted image files.
 ```
 
 ## License
+
 MIT
